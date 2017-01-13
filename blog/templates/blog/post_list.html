@@ -16,6 +16,8 @@
             <div>
                 <h1><a href="">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaksbr }}</p>
+                <p><a href="{{ post.upload.url }}">{{ post.upload.url }}</a></p>
+                <!--AQUI ESTOY COMENTANDO FUERA LA IMAGEN DIRECTAMENTE.SI DESEO MOSTRARLA, debo quitar los simbolos externos, y este comentario<p><img src= "{{ post.upload.url }}" /></p>-->
                 <p>published: {{ post.published_date }}</p>
             </div>
         {% endfor %}
